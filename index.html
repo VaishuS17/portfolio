@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Samritkar - Web Developer, Programmer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8044cc1920.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>V</span>aishnavi.</h1>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#training">Training</a> </li>
+                    <li> <a href="#projects">Projects</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span>Vaishnavi Samritkar</span> <br> from Nagpur. </h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------- about -------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/vaishnavi.jpg" alt="">    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my portfolio website! <br>I am Student of JD college of Engineering and Management in Information Technology and this site is a collection of my work thoughout my undergraduate studies. <br> A Web Developer <br>Enthusiastic front-end developer with a strong grasp of HTML, CSS, and JavaScript. Adept at turning design concepts into responsive and visually appealing websites. My recent project involved developing an interactive e-commerce platform, showcasing my commitment to creating seamless user experiences and collaborating within a team environment.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>HTML , CSS , JavaScript</li>
+                            <li><span>Programming</span><br>C++ , JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech 2023</span><br>7.28 cgpa</li>
+                            <li><span>HSC Board 2019</span><br>58.15%</li>
+                            <li><span>SSC Board 2017</span><br>76%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------- training ------------- -->
+    <div id="training">
+        <div class="container">
+            <h1 class="sub-title">Training</h1>
+            <div class="training-list">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I successfully completed the NPTEL certification course in Introduction to Machine Learning, where i gained a comprehensive understanding of fundamental ML concepts, algorithms, and real-world applications.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>DCA (Diploma in Computer Application)</h2>
+                    <p>I successfully completed the DCA(Diploma in Computer Application) certificatio course where i gained a comprehensive understanding of fundamental concepts of computer application.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------- projects --------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Weather App</h2>
+                    <p>- App allows users to access weather information based on inputting a country name. <br>
+                       - By integrating real-time weather data through APIs, users can obtain accurate weather updates and forecasts for any country they specify. <br>
+                       - Tech Stack: HTML, CSS, JavaScript.
+                    </p>
+                    <a href="https://github.com/VaishuS17/weather-app">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>Password Generator</h2>
+                    <p>- JavaScript application that offers a simple yet powerful solution to generate random passwords. <br>
+                       - With each click, the application generates a new random password, ensuring enhanced security for user accounts and sensitive information.  <br>
+                       - Tech Stack: HTML, CSS, JavaScript.
+                    </p>
+                    <a href="https://github.com/VaishuS17/password-generator">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Book Store</h2>
+                    <p>- E-Book store front-end design or landing page. <br> - A place of business where books are the main item offered for sale. <br>
+                       - Tech Stack: HTML, CSS, JavaScript.
+                    </p>
+                    <a href="https://github.com/VaishuS17/book-store">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- contact --------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vaishnavisamritkar01@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i></i>9112971659</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vaishnavisamritkar/"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/VaishuS17"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="img/VaishnaviSamritkar.pdf"class="btn btn2">Download CV</a>
+                </div>
+
+                <!-- -------- form --------- -->
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------- copyrighy ----------- -->
+        <div class="copyright">
+            <p>copyright @vaishu, Made By <i class="fa-solid fa-heart"></i> Vaishnavi Samritkar</p>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
