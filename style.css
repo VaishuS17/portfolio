@@ -195,13 +195,10 @@ nav il li a:hover::after {
     font-weight: 500;
     margin-bottom: 15px;
 }
-.projects-list div a {
-    text-decoration: none;
-    background: #262626;
-    color: #fff;
-    font-size: 20px;
+.projects-list div a img {
     margin-top: 20px;
-    display: inline-block;
+    width: 30px;
+    height: auto; 
 }
 .projects-list div:hover {
     background: #ff004f;
